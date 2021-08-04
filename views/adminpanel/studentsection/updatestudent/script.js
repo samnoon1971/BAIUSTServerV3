@@ -1,8 +1,9 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
+$(document).ready(function () {
+    console.log("ready!");
     $("#dbox").hide();
     let id = localStorage.getItem("id");
     localStorage.clear();
+
     function send() {
         let student = {
 
@@ -47,6 +48,7 @@ $( document ).ready(function() {
             data: JSON.stringify(student)
         });
     }
+
     send();
     $("#back").click(() => {
         $(this).data("clicked", true);
@@ -113,14 +115,13 @@ $( document ).ready(function() {
         let term = $("#term").val();
         let semester = $("#semester").val();
         // console.log(dob);
-        if(name === "" || cgpa === "" || semester === "" || payment === "" || religion === "" ||
+        if (name === "" || cgpa === "" || semester === "" || payment === "" || religion === "" ||
             bloodGroup === "" || nationality === "" || dob === "" || mobile === "" ||
             email === "" || gender === "" || current === "" || faname === "" || faprof === "" ||
             moname === "" || moprof === "" || guardian_name === "" || guardian_mobile === "" ||
-            id === "" || present === "" || permanent === "" || pass === "" || dept === "" || level === "" || term === ""){
+            id === "" || present === "" || permanent === "" || pass === "" || dept === "" || level === "" || term === "") {
             alert("Please fill all the data fields");
-        }
-        else{
+        } else {
             function send2() {
                 let student = {
                     name: name,
@@ -192,12 +193,11 @@ $( document ).ready(function() {
                     data: JSON.stringify(student)
                 });
             }
+
             send2();
         }
 
     });
-
-
 
 
 });

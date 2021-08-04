@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     console.log("Ready");
     let ctx1 = $("#pie-chartcanvas-1");
@@ -66,7 +65,6 @@ $(document).ready(function () {
                 };
 
 
-
                 chart1 = new Chart(ctx1, {
                     type: "pie",
                     data: data1,
@@ -78,6 +76,7 @@ $(document).ready(function () {
 
         });
     }
+
     send();
 
 })

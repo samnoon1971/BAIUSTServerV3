@@ -91,7 +91,6 @@
 <script>
 
 
-
     $(document).ready(function () {
         console.log("Ready");
         $("#searchbutton").click(() => {
@@ -100,46 +99,37 @@
             let dept = $("#searchbar").val();
             localStorage.setItem("dept", dept);
             let lt = $("#ltbar").val();
-            if(lt === "L-4 T-2"){
+            if (lt === "L-4 T-2") {
                 localStorage.setItem("level", "4");
                 localStorage.setItem("term", "II");
-            }
-            else if(lt === "L-4 T-1"){
+            } else if (lt === "L-4 T-1") {
                 localStorage.setItem("level", "4");
                 localStorage.setItem("term", "I");
-            }
-            else if(lt === "L-3 T-2"){
+            } else if (lt === "L-3 T-2") {
                 localStorage.setItem("level", "3");
                 localStorage.setItem("term", "II");
-            }
-            else if(lt === "L-3 T-1"){
+            } else if (lt === "L-3 T-1") {
                 localStorage.setItem("level", "3");
                 localStorage.setItem("term", "I");
-            }
-            else if(lt === "L-2 T-2"){
+            } else if (lt === "L-2 T-2") {
                 localStorage.setItem("level", "2");
                 localStorage.setItem("term", "II");
-            }
-            else if(lt === "L-2 T-1"){
+            } else if (lt === "L-2 T-1") {
                 localStorage.setItem("level", "2");
                 localStorage.setItem("term", "I");
-            }
-            else if(lt === "L-1 T-2"){
+            } else if (lt === "L-1 T-2") {
                 localStorage.setItem("level", "1");
                 localStorage.setItem("term", "II");
-            }
-            else if(lt === "L-1 T-1"){
+            } else if (lt === "L-1 T-1") {
                 localStorage.setItem("level", "1");
                 localStorage.setItem("term", "I");
-            }
-            else{
+            } else {
                 localStorage.setItem("level", "All");
                 localStorage.setItem("term", "All");
             }
 
             window.location.replace("./viewcourse.html");
         })
-
 
 
         $("#back").click(() => {

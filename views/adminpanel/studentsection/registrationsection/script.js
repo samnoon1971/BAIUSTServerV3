@@ -5,9 +5,10 @@ $(document).ready(function () {
 
     localStorage.clear();
     console.log(id);
+
     function send() {
         let sendData = {
-          id: id,
+            id: id,
 
         }
         $.ajax({

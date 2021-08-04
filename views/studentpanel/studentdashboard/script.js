@@ -1,7 +1,8 @@
-$( document ).ready(function () {
+$(document).ready(function () {
     console.log("Ready");
 
     let id = localStorage.getItem("id");
+
     function send() {
         let student = {
             id: id,
@@ -42,6 +43,7 @@ $( document ).ready(function () {
             data: JSON.stringify(student)
         });
     }
+
     send();
 
 });
