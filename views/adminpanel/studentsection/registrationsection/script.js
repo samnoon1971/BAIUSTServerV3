@@ -3,7 +3,6 @@ $(document).ready(function () {
 
     let id = localStorage.getItem("id");
 
-    localStorage.clear();
     console.log(id);
 
     function send() {
