@@ -48,7 +48,7 @@ $(document).ready(function () {
                                 "#A9A9A9",
                                 "#DC143C",
                                 "#F4C460",
-                                "#2E8B57",
+                                "#6E8Bf7",
                                 "#3E8B23"
                             ],
                             borderColor: [
