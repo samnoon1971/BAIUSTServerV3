@@ -1,6 +1,6 @@
 
 
-# Server v2
+# Server v3
 
 A portal for university management
 
@@ -65,7 +65,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd ServerV2
+  cd BAIUSTServerV3
 ```
 
 Install dependencies
