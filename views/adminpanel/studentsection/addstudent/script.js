@@ -8,6 +8,7 @@ $(document).ready(function () {
         console.log("Clicked");
         window.location.replace("/views/admin/student");
     })
+
     $("#reset").click(() => {
         $(this).data('clicked', true);
         console.log("clicked");
